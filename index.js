@@ -1,4 +1,4 @@
-
+const Buffer = require("@craftzdog/react-native-buffer").Buffer;
 const empty = Buffer.alloc(0)
 
 // a global index for parsing the options and the payload
@@ -185,6 +185,7 @@ const numMap = {
   35: 'Proxy-Uri',
   39: 'Proxy-Scheme',
   60: 'Size1',
+  61: 'token',
   258: 'No-Response',
   2049: 'OCF-Accept-Content-Format-Version',
   2053: 'OCF-Content-Format-Version'
