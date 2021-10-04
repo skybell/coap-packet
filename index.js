@@ -445,6 +445,9 @@ function prepareOptions (packet) {
       pos += 2
     }
 
+    if (!value.copy){ // coerce back into buffer if required
+      value = Buffer.from(value);
+    }
     value.copy(buffer, pos)
     pos += value.length
     total += delta
